@@ -13,6 +13,9 @@ def contact_view(request) :
 def elements(request) :
     return render(request, 'website/elements.html')
 
+def signup(request) :
+    return render(request, 'website/index1.html')
+
 
 
 # Create your views here.
