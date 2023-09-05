@@ -4,7 +4,7 @@ from django.db import models
 
 class post(models.Model) :
     #image
-    #author
+    #author = models.CharField(max_length=100)
     title = models.CharField(max_length=255)
     content = models.TextField()
     #tag
