@@ -8,6 +8,7 @@ def blog_view(request) :
     return render(request, 'blog/blog-home.html',context)
 
 def blog_single(request, pid):
-    posts = get_object_or_404(post, pk=pid)
+    post_s = post.objects.filter(status=1)
+    posts = get_object_or_404(post_s, pk=pid)
     context = {'posts': posts}
     return render(request, 'blog/blog-single.html', context)
