@@ -30,3 +30,5 @@ class post(models.Model) :
     def __str__(self):
         return self.title
     
+    def snip(self):
+        return self.content[:100] + '....'
