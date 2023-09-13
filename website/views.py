@@ -16,6 +16,9 @@ def elements(request) :
 def signup(request) :
     return render(request, 'website/index1.html')
 
+def dashboard(request) :
+    return render(request, 'website/dashboard.html')
+
 
 
 # Create your views here.
