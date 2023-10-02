@@ -2,6 +2,8 @@
 
 
 {%load static%}
+
+{% load blog_tags %}
 {% block content %}
 
 			<!-- start banner Area -->
@@ -152,9 +154,9 @@
 			                        </form>
 								</div>
 									{% include "blog/blog-writter.html" %}
-									{% include "blog/popular-post.html" %}
+									{% latestpost %}
 									{% include "blog/blog-ads.html"	%}
-									{% include	"blog/blog-post-category.html" %}
+									{% postcat %}
 								<div class="single-sidebar-widget newsletter-widget">
 									<h4 class="newsletter-title">Newsletter</h4>
 									<p>
