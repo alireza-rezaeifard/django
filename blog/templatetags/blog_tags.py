@@ -1,5 +1,5 @@
 from django import template
-from blog.models import post,category
+from blog.models import *
 register = template.Library()
 
 @register.inclusion_tag('blog/popular-post.html')
@@ -18,4 +18,12 @@ def postcat():
         cat_dict[name] = posts.filter(category=name).count()
     
     return {'categories':cat_dict}
+
+@register.inclusion_tag('website/recent-post.html')
+def latestweb():
+    global posts
+    posts = post.objects.filter(status=1).order_by('published_date')[:6]
+    return {'posts':posts}
+    
+
     

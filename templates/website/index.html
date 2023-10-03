@@ -2,6 +2,8 @@
 
 
 {%load static%}
+
+{% load blog_tags %}
 {% block content %}
 
 			<!-- start banner Area -->
@@ -424,7 +426,7 @@
 						</div>
 					</div>							
 					<div class="row">
-						{% include "website/recent-post.html" %}
+						{% latestweb %}
 					</div>
 				</div>	
 			</section>
