@@ -2,8 +2,10 @@ from django.shortcuts import get_object_or_404, render
 from blog.models import post
 
 # Create your views here.
-def blog_view(request) :
-    posts = post.objects.filter(status=1)
+def blog_view(request, cat_name=None) :
+    posts = post.objects.filter(status=1)    
+    if cat_name :
+        posts = posts.filter(category__name=cat_name)
     context = {'posts':posts}
     return render(request, 'blog/blog-home.html',context)
 
