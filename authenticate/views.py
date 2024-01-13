@@ -18,3 +18,9 @@ class SignupView(View):
             return redirect('dashboard')  # Redirect to a dashboard page
         return render(request, 'signup/signup.html', {'form': form})
 
+def login_view(request):
+    if request.user.is_authenticated:
+        msg = "user is authenticated"
+    else : 
+        msg = "user is not authenticated"
+    return render(request, 'authenticate/login.html', {'msg' : msg})
