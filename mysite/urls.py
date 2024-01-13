@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin', include('admin_soft.urls')),
     path('', include('website.urls')),
     path('blog/', include('blog.urls')),
-    path('user/', include('authenticate.urls'))
+    path('login/', include('authenticate.urls'))
+    path('accounts/', include('accounts.urls.py'))
     
 ]
 
