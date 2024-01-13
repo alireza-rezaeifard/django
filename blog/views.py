@@ -2,6 +2,9 @@ from django.shortcuts import get_object_or_404, render
 from blog.models import post
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 # Create your views here.
+
+
+
 def blog_view(request, cat_name=None, author_username=None) :
     posts = post.objects.filter(status=1)   
     #for category fillter 
