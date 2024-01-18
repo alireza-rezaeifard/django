@@ -46,8 +46,9 @@ INSTALLED_APPS = [
     'robots',
     "taggit",
     "debug_toolbar",
-    'tinymce',
+    "django_summernote",
     'django.contrib.sitemaps',
+    "captcha",
     'website.apps.WebsiteConfig',
     "blog.apps.BlogConfig",
 
@@ -60,6 +61,9 @@ SITE_ID = 1
 # robots
 ROBOTS_USE_HOST = True
 ROBOTS_USE_SITEMAP = True
+
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

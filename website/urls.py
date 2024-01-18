@@ -10,5 +10,6 @@ urlpatterns = [
     path('contact', contact_view, name = 'contact'),
     path('elements', elements, name = 'elements'),
     path('signup', signup, name = 'signup'),
-    path('dashboard/', dashboard, name='dash')
+    path('dashboard/', dashboard, name='dash'),
+
 ]
