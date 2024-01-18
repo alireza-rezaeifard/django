@@ -1,6 +1,7 @@
 from django.contrib import admin
 from website.models import contact
 
+
 class contactAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     list_display = ('name','email','created_date')
@@ -9,3 +10,4 @@ class contactAdmin(admin.ModelAdmin):
 
 admin.site.register(contact,contactAdmin)
 # Register your models here.
+

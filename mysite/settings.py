@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'robots',
     "taggit",
     "debug_toolbar",
+    'tinymce',
     'django.contrib.sitemaps',
     'website.apps.WebsiteConfig',
     "blog.apps.BlogConfig",
