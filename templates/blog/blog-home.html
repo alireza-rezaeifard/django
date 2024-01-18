@@ -1,9 +1,9 @@
 {% extends "website/base_htm.html" %}
 
-
+{% load blog_tags %}
 {%load static%}
 
-{% load blog_tags %}
+
 {% block content %}
 
 			<!-- start banner Area -->
@@ -111,7 +111,7 @@
 								</div>
 								<div class="col-lg-9 col-md-9 ">
 									<div class="feature-img">
-										<img class="img-fluid" src="{{post.image.url}}" alt="">
+										<img class="img-fluid" src="{{ post.image.url }}" alt="" />
 									</div>
 									<a class="posts-title" href="{% url 'blog:single' pid=post.id %}"><h3>{{post.title}}</h3></a>
 									<p class="excert">
@@ -186,7 +186,7 @@
 										You can unsubscribe at any time
 									</p>								
 								</div>
-									{% include "blog/blog-cloudtags.html" %}						
+									{% include "blog/blog-tags.html" %}						
 							</div>
 						</div>
 					</div>
