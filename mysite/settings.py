@@ -110,6 +110,18 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:cg265AgcdCB-1dcBdeebfd2gcFF53664@monorail.proxy.rlwy.net:21886/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'cg265AgcdCB-1dcBdeebfd2gcFF53664',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': 21886,
+    }
+}
+
 
 
 # Password validation
