@@ -109,7 +109,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -119,6 +119,13 @@ DATABASES = {
         'PASSWORD': 'cg265AgcdCB-1dcBdeebfd2gcFF53664',
         'HOST': 'monorail.proxy.rlwy.net',
         'PORT': 21886,
+    }
+}
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
